@@ -1,0 +1,31 @@
+// Minimal offline STM32F407 subset; intentionally no sensor/electric motor model.
+flash: Memory.MappedMemory @ sysbus 0x08000000
+    size: 0x100000
+sram: Memory.MappedMemory @ sysbus 0x20000000
+    size: 0x20000
+nvic: IRQControllers.NVIC @ sysbus 0xE000E000
+    priorityMask: 0xF0
+    systickFrequency: 16000000
+    IRQ -> cpu@0
+cpu: CPU.CortexM @ sysbus
+    cpuType: "cortex-m4"
+    nvic: nvic
+usart2: UART.STM32_UART @ sysbus <0x40004400, +0x100>
+    -> nvic@38
+gpioPortA: GPIOPort.STM32_GPIOPort @ sysbus <0x40020000, +0x400>
+    modeResetValue: 0xA8000000
+    numberOfAFs: 16
+gpioPortD: GPIOPort.STM32_GPIOPort @ sysbus <0x40020C00, +0x400>
+    numberOfAFs: 16
+    12 -> heartbeat@0
+    13 -> aiResult@0
+    14 -> alarm@0
+    15 -> fan@0
+heartbeat: Miscellaneous.LED @ gpioPortD 12
+aiResult: Miscellaneous.LED @ gpioPortD 13
+alarm: Miscellaneous.LED @ gpioPortD 14
+fan: Miscellaneous.LED @ gpioPortD 15
+rtc: Timers.STM32F4_RTC @ sysbus 0x40002800
+    AlarmIRQ -> nvic@41
+rcc: Miscellaneous.STM32F4_RCC @ sysbus 0x40023800
+    rtcPeripheral: rtc

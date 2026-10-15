@@ -1,0 +1,13 @@
+{
+  "cpu_python": "$HOME/meco-env-cpu/bin/python",
+  "gpu_python": "$HOME/meco-env-gpu/bin/python",
+  "renode": "$HOME/renode/renode",
+  "mapper_dir": "${MECO_MAPPER_DIR}",
+  "port_base": 39800,
+  "request_timeout_s": 7200,
+  "affinity": {
+    "cpu": [0, 1, 2, 3],
+    "gpu": [4, 5, 6, 7],
+    "mcu": [8, 9]
+  }
+}
