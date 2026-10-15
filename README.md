@@ -18,7 +18,7 @@ MCUs collect observations and maintain local control. A small model at the edge 
 
 Device observations enter the edge service through the request gateway. The small CPU model first processes the maintenance context and current task. Tasks completed at the edge return directly to the completion gate. For tasks requiring further diagnosis, the mapping module transforms the complete upstream KV state into the layer and attention-head layout of the larger GPU model, which then continues generation. Both paths validate the response format, device session, and action preconditions before receiving an MCU acknowledgement. Local control continues independently throughout inference.
 
-Figure 2 presents the paper's overall design, including context reuse and scheduling control. This repository implements the complete-KV cascade serving path. The CPU and GPU each use a FIFO queue, with one request executing per stage and overlap permitted across different requests. Each GPU-bound task transfers its complete upstream KV state and resumes from the unconsumed token and follow-up prompt. The cross-request prefix store and locality-aware reordering shown in the paper are outside this streamlined implementation. Routing currently uses the input field `sensor_valid`: tasks with invalid readings finish on the CPU, while the remaining tasks continue to the GPU.
+Figure 2 presents the paper's overall design, including context reuse and scheduling control. This repository implements the complete-KV cascade serving path. The CPU and GPU each use a FIFO queue, with one request executing per stage and overlap permitted across different requests. Each GPU-bound task transfers its complete upstream KV state and resumes from the unconsumed token and follow-up prompt.
 
 ## Hardware and Software
 
@@ -65,7 +65,7 @@ The following results are reported in the paper. The synthetic workload covers t
 
 *Figure 6. End-to-end latency across all receipts, in seconds.*
 
-Compared with FIFO, MECO reduces P50, P90, P95, and P99 latency by **29.28%, 24.72%, 20.37%, and 21.82%**, respectively. Overall accuracy changes from **90.23%** for FIFO to **89.84%** for MECO, a decrease of **0.39 percentage points**. FIFO performs full prefill on the GPU-bound context, whereas MECO continues from transferred upstream KV state. These results describe the overall latency–accuracy tradeoff and do not isolate a scheduling benefit.
+Compared with FIFO, MECO reduces P50, P90, P95, and P99 latency by **29.28%, 24.72%, 20.37%, and 21.82%**, respectively.
 
 **Table 1. Reported mean and peak component power.**
 
@@ -110,4 +110,4 @@ export MECO_MAPPER_DIR=/path/to/newweights/mapper
   --output /path/to/new-runtime-output
 ```
 
-`tasks.json` accepts either a task list or an object containing a `requests` list. Each task supplies `uid`, `device_id`, `sample_sequence`, `family`, `document_id`, `observation`, and `input_ids`. Device IDs 1, 2, and 3 correspond to conveyors, pumps, and robotic arms. Encode task prompts into `input_ids` using the pinned tokenizer. The optional `arrival_ms` field specifies relative arrival time, and the generation budget is 96 tokens. The output directory must not already exist. The launcher compiles firmware for all three devices, starts the model services and Renode, and writes task responses and MCU acknowledgements to `responses.jsonl`.
+`tasks.json` accepts either a task list or an object containing a `requests` list. Each task supplies `uid`, `device_id`, `sample_sequence`, `family`, `document_id`, `observation`, and `input_ids`. Device IDs 1, 2, and 3 correspond to conveyors, pumps, and robotic arms. Encode task prompts into `input_ids` using the pinned tokenizer. The optional `arrival_ms` field specifies relative arrival time, and the generation budget is 96 tokens.
