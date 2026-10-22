@@ -1,0 +1,2 @@
+# Preserve the pinned mapper manifest and coefficient checksums across platforms.
+weights/mapper/** -text

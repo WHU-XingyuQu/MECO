@@ -1,0 +1,3135 @@
+{
+  "source_model_id": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "target_model_id": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "source_revision": "2e1fd397ee46e1388853d2af2c993145b0f1098a",
+  "target_revision": "c03e6d358207e414f1eca0bb1891e29f1db0e242",
+  "source_layers": 28,
+  "target_layers": 28,
+  "source_heads": 2,
+  "target_heads": 4,
+  "head_dim": 128,
+  "rope_theta": 1000000,
+  "layers": [
+    {
+      "layer": 0,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            6942.972133354743,
+            787.5126929499797,
+            4047.3208807620667,
+            977.3899777011168
+          ],
+          "final_effective_observations_per_head": [
+            6942.972133354743,
+            4096.0,
+            4096.0,
+            4096.000000000001
+          ],
+          "shrinkage_alpha_per_head": [
+            1.0,
+            0.41849417377784776,
+            0.9933256191750374,
+            0.4674202659413397
+          ],
+          "minimum_final_effective_observations": 4096.0,
+          "maximum_final_effective_observations": 6942.972133354743,
+          "minimum_alpha": 0.41849417377784776,
+          "maximum_alpha": 1.0
+        },
+        "fit": {
+          "weighted_global_r2": 0.9980154951675035,
+          "unweighted_global_r2": 0.9789800220528296,
+          "normalized_weight_minimum": 0.0,
+          "normalized_weight_median": 0.581667541939298,
+          "normalized_weight_maximum": 105.87620534999719,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9991045483044256,
+            0.9971169342171812,
+            0.9997358941349467,
+            0.997156499719233
+          ],
+          "unweighted_per_head_r2": [
+            0.8782096478964855,
+            0.9963951821399981,
+            0.9964088453072784,
+            0.995316094940879
+          ],
+          "effective_observations_per_head": [
+            6942.97212089495,
+            4095.999988250208,
+            4096.000005750464,
+            4095.999994660751
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            3341.7684472910764,
+            881.061941751729,
+            4548.343988130447,
+            1394.163851078581
+          ],
+          "final_effective_observations_per_head": [
+            4096.000000000001,
+            4095.9999999999995,
+            4548.343988130447,
+            4095.9999999999995
+          ],
+          "shrinkage_alpha_per_head": [
+            0.8933477681613771,
+            0.44321196935500246,
+            1.0,
+            0.5614274040390461
+          ],
+          "minimum_final_effective_observations": 4095.9999999999995,
+          "maximum_final_effective_observations": 4548.343988130447,
+          "minimum_alpha": 0.44321196935500246,
+          "maximum_alpha": 1.0
+        },
+        "fit": {
+          "weighted_global_r2": 0.9983663289399194,
+          "unweighted_global_r2": 0.9838720632316965,
+          "normalized_weight_minimum": 0.0,
+          "normalized_weight_median": 0.5232636336800186,
+          "normalized_weight_maximum": 109.6731414114143,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9982352725647093,
+            0.9976902400878412,
+            0.999159783503786,
+            0.998138541617375
+          ],
+          "unweighted_per_head_r2": [
+            0.9969114585844997,
+            0.9974513893525346,
+            0.9393586876790031,
+            0.9974505661700555
+          ],
+          "effective_observations_per_head": [
+            4096.000009257755,
+            4095.9999665276764,
+            4548.343997924377,
+            4095.999989537694
+          ]
+        }
+      },
+      "file": "layer_000.safetensors",
+      "sha256": "27a02e18353114bbc7d40c14558efa865bc88c3b975caf36dddc986a2e6c0b40"
+    },
+    {
+      "layer": 1,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            559.5263730694671,
+            2065.6847140871937,
+            2208.4392282470735,
+            324.7719413673547
+          ],
+          "final_effective_observations_per_head": [
+            4096.000000000001,
+            4096.0,
+            4096.000000000001,
+            4095.9999999999986
+          ],
+          "shrinkage_alpha_per_head": [
+            0.3516754654504088,
+            0.6897585319136068,
+            0.714617870969867,
+            0.2670921918809745
+          ],
+          "minimum_final_effective_observations": 4095.9999999999986,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.2670921918809745,
+          "maximum_alpha": 0.714617870969867
+        },
+        "fit": {
+          "weighted_global_r2": 0.9993968177897941,
+          "unweighted_global_r2": 0.9990103326731511,
+          "normalized_weight_minimum": 0.2853821220258367,
+          "normalized_weight_median": 0.7329078307532128,
+          "normalized_weight_maximum": 110.87706764058025,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.999424599152779,
+            0.9994147663957199,
+            0.9995070986374776,
+            0.9992611333939725
+          ],
+          "unweighted_per_head_r2": [
+            0.9989484761927184,
+            0.998909739850242,
+            0.9991159693846486,
+            0.9990697902375423
+          ],
+          "effective_observations_per_head": [
+            4096.000009370861,
+            4096.000009474343,
+            4096.000009467417,
+            4096.0000199128945
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            660.0026337406326,
+            2190.3420504179735,
+            2852.719527355561,
+            342.0292636465921
+          ],
+          "final_effective_observations_per_head": [
+            4096.0,
+            4095.9999999999986,
+            4096.0,
+            4096.0
+          ],
+          "shrinkage_alpha_per_head": [
+            0.38246285274556757,
+            0.7115036475506641,
+            0.8196209502463376,
+            0.27415946893987847
+          ],
+          "minimum_final_effective_observations": 4095.9999999999986,
+          "maximum_final_effective_observations": 4096.0,
+          "minimum_alpha": 0.27415946893987847,
+          "maximum_alpha": 0.8196209502463376
+        },
+        "fit": {
+          "weighted_global_r2": 0.998504861275783,
+          "unweighted_global_r2": 0.9978524536416604,
+          "normalized_weight_minimum": 0.18037904787185424,
+          "normalized_weight_median": 0.7258405097294423,
+          "normalized_weight_maximum": 89.91024018648001,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9987533398625758,
+            0.9980911375629103,
+            0.9988357660744095,
+            0.9981983011931812
+          ],
+          "unweighted_per_head_r2": [
+            0.9983354780148613,
+            0.9976026375692196,
+            0.9977633746541944,
+            0.9978275786997493
+          ],
+          "effective_observations_per_head": [
+            4096.000000843948,
+            4095.999991324169,
+            4095.99997114578,
+            4095.9999691926655
+          ]
+        }
+      },
+      "file": "layer_001.safetensors",
+      "sha256": "3c8166f48a0d9c950470267ccfc3293174b154e5f27bf2fe32a5104352601243"
+    },
+    {
+      "layer": 2,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            467.75081615158865,
+            2607.7099645009193,
+            611.3957491167762,
+            367.05243211121547
+          ],
+          "final_effective_observations_per_head": [
+            4095.9999999999995,
+            4096.0,
+            4096.0,
+            4095.9999999999995
+          ],
+          "shrinkage_alpha_per_head": [
+            0.3211488932844302,
+            0.7809111884630129,
+            0.36787020170415746,
+            0.28410591936119567
+          ],
+          "minimum_final_effective_observations": 4095.9999999999995,
+          "maximum_final_effective_observations": 4096.0,
+          "minimum_alpha": 0.28410591936119567,
+          "maximum_alpha": 0.7809111884630129
+        },
+        "fit": {
+          "weighted_global_r2": 0.9984853177428816,
+          "unweighted_global_r2": 0.9977377932309162,
+          "normalized_weight_minimum": 0.21908880780707407,
+          "normalized_weight_median": 0.6843366015607947,
+          "normalized_weight_maximum": 133.4240262695204,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9987769690033961,
+            0.9993345624553951,
+            0.9988607114715469,
+            0.9967813015916958
+          ],
+          "unweighted_per_head_r2": [
+            0.9983661746655157,
+            0.9981618259773506,
+            0.9982617566858277,
+            0.9958457804549047
+          ],
+          "effective_observations_per_head": [
+            4095.999995992789,
+            4096.000001266063,
+            4096.000010063268,
+            4096.000020349825
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            412.80183904068235,
+            456.31661284503207,
+            1104.476923695248,
+            270.5351393860588
+          ],
+          "final_effective_observations_per_head": [
+            4096.0,
+            4096.0,
+            4096.0,
+            4096.000000000001
+          ],
+          "shrinkage_alpha_per_head": [
+            0.3014752621839661,
+            0.31715095511543884,
+            0.4977371286946285,
+            0.24359637197161366
+          ],
+          "minimum_final_effective_observations": 4096.0,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.24359637197161366,
+          "maximum_alpha": 0.4977371286946285
+        },
+        "fit": {
+          "weighted_global_r2": 0.9980669616014864,
+          "unweighted_global_r2": 0.9975501106546301,
+          "normalized_weight_minimum": 0.5022628898747917,
+          "normalized_weight_median": 0.6999028933347019,
+          "normalized_weight_maximum": 125.09807587790479,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9982615289805464,
+            0.9983335687184057,
+            0.9976374076939688,
+            0.9979943779786649
+          ],
+          "unweighted_per_head_r2": [
+            0.9977433719643769,
+            0.9982334762446746,
+            0.9961409448354817,
+            0.9975982331663305
+          ],
+          "effective_observations_per_head": [
+            4096.000004682362,
+            4095.9999812220553,
+            4096.000011697654,
+            4096.000000711102
+          ]
+        }
+      },
+      "file": "layer_002.safetensors",
+      "sha256": "5a597ec407d7fe9705acd80e2ff200ba0c31be2b64e457be4604fa4cad260b3e"
+    },
+    {
+      "layer": 3,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            4426.285464221587,
+            674.0661482499846,
+            991.3975277844781,
+            3585.6911638552206
+          ],
+          "final_effective_observations_per_head": [
+            4426.285464221587,
+            4096.000000000001,
+            4096.0,
+            4096.0
+          ],
+          "shrinkage_alpha_per_head": [
+            1.0,
+            0.38658913199463857,
+            0.4708470401133362,
+            0.9286576768363786
+          ],
+          "minimum_final_effective_observations": 4096.0,
+          "maximum_final_effective_observations": 4426.285464221587,
+          "minimum_alpha": 0.38658913199463857,
+          "maximum_alpha": 1.0
+        },
+        "fit": {
+          "weighted_global_r2": 0.9992287605538085,
+          "unweighted_global_r2": 0.9901711239108804,
+          "normalized_weight_minimum": 0.0,
+          "normalized_weight_median": 0.6057049021767246,
+          "normalized_weight_maximum": 126.60218018292585,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9997848351302662,
+            0.998600919524531,
+            0.9991976677590022,
+            0.9995657175068544
+          ],
+          "unweighted_per_head_r2": [
+            0.9649725824062216,
+            0.998012753167926,
+            0.9986899123036758,
+            0.9979486659980746
+          ],
+          "effective_observations_per_head": [
+            4426.285492774978,
+            4096.000006090205,
+            4095.9999886280807,
+            4095.999994493218
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            887.7572349287576,
+            612.2229639666816,
+            1039.748118926053,
+            2309.1306888501663
+          ],
+          "final_effective_observations_per_head": [
+            4096.0,
+            4096.0,
+            4095.9999999999986,
+            4095.9999999999986
+          ],
+          "shrinkage_alpha_per_head": [
+            0.44493299801255937,
+            0.3681230607847345,
+            0.4825078997996326,
+            0.7317595114519181
+          ],
+          "minimum_final_effective_observations": 4095.9999999999986,
+          "maximum_final_effective_observations": 4096.0,
+          "minimum_alpha": 0.3681230607847345,
+          "maximum_alpha": 0.7317595114519181
+        },
+        "fit": {
+          "weighted_global_r2": 0.9983309496465895,
+          "unweighted_global_r2": 0.997724295376865,
+          "normalized_weight_minimum": 0.26824048150462454,
+          "normalized_weight_median": 0.6329411857417587,
+          "normalized_weight_maximum": 127.95269000205704,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9981817254400449,
+            0.9979318344864336,
+            0.9986716569577434,
+            0.9985456154634925
+          ],
+          "unweighted_per_head_r2": [
+            0.9980878250611968,
+            0.9972251734393549,
+            0.9979270132984622,
+            0.9973697517990635
+          ],
+          "effective_observations_per_head": [
+            4095.9999781499905,
+            4095.999988411553,
+            4096.000012261217,
+            4095.999982336702
+          ]
+        }
+      },
+      "file": "layer_003.safetensors",
+      "sha256": "6ec08245e02405d814db4b0a027eb3990dca5b0a2817b63c9a8b74fce72d937a"
+    },
+    {
+      "layer": 4,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            1072.7225594558547,
+            404.65566256861473,
+            266.2463156394339,
+            298.6108385442466
+          ],
+          "final_effective_observations_per_head": [
+            4096.000000000001,
+            4095.9999999999986,
+            4096.000000000001,
+            4095.9999999999986
+          ],
+          "shrinkage_alpha_per_head": [
+            0.4903184699738419,
+            0.2984534030167278,
+            0.24164401814950864,
+            0.2560198914367283
+          ],
+          "minimum_final_effective_observations": 4095.9999999999986,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.24164401814950864,
+          "maximum_alpha": 0.4903184699738419
+        },
+        "fit": {
+          "weighted_global_r2": 0.997810068824825,
+          "unweighted_global_r2": 0.9968553193822329,
+          "normalized_weight_minimum": 0.5096815234020841,
+          "normalized_weight_median": 0.7444843649068636,
+          "normalized_weight_maximum": 92.90892801880757,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9989819817203223,
+            0.9964525048429943,
+            0.9989217991417231,
+            0.9987103927507022
+          ],
+          "unweighted_per_head_r2": [
+            0.9982390681667537,
+            0.9954419331133917,
+            0.9983740746201861,
+            0.9981145508404443
+          ],
+          "effective_observations_per_head": [
+            4096.00003281472,
+            4095.999994030223,
+            4095.999990834414,
+            4096.000001676196
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            213.1404162777368,
+            273.19823784669643,
+            157.08400931883702,
+            171.65450737880747
+          ],
+          "final_effective_observations_per_head": [
+            4096.0,
+            4096.000000000001,
+            4096.0,
+            4096.000000000001
+          ],
+          "shrinkage_alpha_per_head": [
+            0.2160534373065141,
+            0.24480105086766243,
+            0.18534111080479684,
+            0.19378366230330163
+          ],
+          "minimum_final_effective_observations": 4096.0,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.18534111080479684,
+          "maximum_alpha": 0.24480105086766243
+        },
+        "fit": {
+          "weighted_global_r2": 0.9970895141331182,
+          "unweighted_global_r2": 0.9969132355545074,
+          "normalized_weight_minimum": 0.7551989551205158,
+          "normalized_weight_median": 0.8062375180550663,
+          "normalized_weight_maximum": 62.471004429340624,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.997018616624148,
+            0.9975454811558963,
+            0.9966759395680088,
+            0.9973263570850917
+          ],
+          "unweighted_per_head_r2": [
+            0.9968634993263256,
+            0.9968021099690835,
+            0.9966476092960427,
+            0.9972824815834852
+          ],
+          "effective_observations_per_head": [
+            4096.000017305005,
+            4095.9999975771248,
+            4095.9999879887673,
+            4096.0000273294945
+          ]
+        }
+      },
+      "file": "layer_004.safetensors",
+      "sha256": "b819a5ba92a194b4b17417564bd87ea7bd3171edb111f417087be1191da0623d"
+    },
+    {
+      "layer": 5,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            785.5244988224263,
+            212.92251878454442,
+            526.219663312832,
+            383.19353574181866
+          ],
+          "final_effective_observations_per_head": [
+            4096.0,
+            4096.0,
+            4096.000000000001,
+            4095.9999999999995
+          ],
+          "shrinkage_alpha_per_head": [
+            0.41795437775819944,
+            0.21594234751577354,
+            0.34089597479905454,
+            0.29034787300577164
+          ],
+          "minimum_final_effective_observations": 4095.9999999999995,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.21594234751577354,
+          "maximum_alpha": 0.41795437775819944
+        },
+        "fit": {
+          "weighted_global_r2": 0.99754812214906,
+          "unweighted_global_r2": 0.9966192447683019,
+          "normalized_weight_minimum": 0.5820456151136149,
+          "normalized_weight_median": 0.7096775175088887,
+          "normalized_weight_maximum": 103.47918683446794,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9983720400364521,
+            0.9983573516948542,
+            0.995300758466486,
+            0.9985333648401656
+          ],
+          "unweighted_per_head_r2": [
+            0.9975877472012156,
+            0.9977219948584375,
+            0.9936204802922495,
+            0.9981067874348947
+          ],
+          "effective_observations_per_head": [
+            4095.999997891226,
+            4096.00001238937,
+            4096.000007995484,
+            4095.9999990518577
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            343.67480253798345,
+            256.64225443607506,
+            349.4293076674067,
+            205.7301228476164
+          ],
+          "final_effective_observations_per_head": [
+            4096.000000000001,
+            4095.9999999999986,
+            4096.000000000001,
+            4096.0
+          ],
+          "shrinkage_alpha_per_head": [
+            0.27482419857685886,
+            0.23721544392990934,
+            0.2771366972778474,
+            0.21224357771622468
+          ],
+          "minimum_final_effective_observations": 4095.9999999999986,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.21224357771622468,
+          "maximum_alpha": 0.2771366972778474
+        },
+        "fit": {
+          "weighted_global_r2": 0.9968417134556067,
+          "unweighted_global_r2": 0.9964492804501673,
+          "normalized_weight_minimum": 0.722863316492783,
+          "normalized_weight_median": 0.7628211388425494,
+          "normalized_weight_maximum": 82.91456614193253,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9972426336366286,
+            0.9962674222345074,
+            0.9970199838296053,
+            0.9969765274902237
+          ],
+          "unweighted_per_head_r2": [
+            0.9968767786435877,
+            0.9955521203504093,
+            0.9966654859520283,
+            0.9968270467347982
+          ],
+          "effective_observations_per_head": [
+            4096.000000705586,
+            4096.000006164217,
+            4096.0000271339395,
+            4095.999998908167
+          ]
+        }
+      },
+      "file": "layer_005.safetensors",
+      "sha256": "f182ce8e0a3d15cd6cb35420e865b3deea0d808f4b57f0e72852c9797e59e521"
+    },
+    {
+      "layer": 6,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            159.5925186157493,
+            909.7611296693256,
+            253.43332580440827,
+            171.02788155402612
+          ],
+          "final_effective_observations_per_head": [
+            4096.0,
+            4095.9999999999973,
+            4096.0,
+            4096.000000000001
+          ],
+          "shrinkage_alpha_per_head": [
+            0.18682132968903709,
+            0.4505471287982114,
+            0.23571772733933344,
+            0.19342802962136615
+          ],
+          "minimum_final_effective_observations": 4095.9999999999973,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.18682132968903709,
+          "maximum_alpha": 0.4505471287982114
+        },
+        "fit": {
+          "weighted_global_r2": 0.9987719184488736,
+          "unweighted_global_r2": 0.9978968069986326,
+          "normalized_weight_minimum": 0.5494529001828207,
+          "normalized_weight_median": 0.8068163394978695,
+          "normalized_weight_maximum": 77.71282186091808,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9984716768083685,
+            0.998728209919381,
+            0.9991861096664901,
+            0.9987410451020341
+          ],
+          "unweighted_per_head_r2": [
+            0.9974821866004718,
+            0.9978831191049257,
+            0.997843230084707,
+            0.9982543392970782
+          ],
+          "effective_observations_per_head": [
+            4095.9999935371843,
+            4096.000037948557,
+            4095.999979224096,
+            4095.9999823588237
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            148.6573295736421,
+            229.09768036461094,
+            153.138151587479,
+            151.1957628642462
+          ],
+          "final_effective_observations_per_head": [
+            4096.0,
+            4095.999999999998,
+            4095.9999999999995,
+            4095.9999999999986
+          ],
+          "shrinkage_alpha_per_head": [
+            0.18028122381538958,
+            0.22404255351807137,
+            0.182988918352296,
+            0.18182003406448924
+          ],
+          "minimum_final_effective_observations": 4095.999999999998,
+          "maximum_final_effective_observations": 4096.0,
+          "minimum_alpha": 0.18028122381538958,
+          "maximum_alpha": 0.22404255351807137
+        },
+        "fit": {
+          "weighted_global_r2": 0.9962007856049334,
+          "unweighted_global_r2": 0.996090998788357,
+          "normalized_weight_minimum": 0.7759574645523581,
+          "normalized_weight_median": 0.8181908727617954,
+          "normalized_weight_maximum": 59.1725311695885,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9964925154339709,
+            0.9958698104144216,
+            0.9957920093652163,
+            0.996613994883387
+          ],
+          "unweighted_per_head_r2": [
+            0.9963845911583865,
+            0.9956165452955597,
+            0.9957402108009571,
+            0.9965975864529947
+          ],
+          "effective_observations_per_head": [
+            4095.999999462133,
+            4096.00002161674,
+            4095.9999679371595,
+            4095.9999988465793
+          ]
+        }
+      },
+      "file": "layer_006.safetensors",
+      "sha256": "a76eb4fd19798cb7a72686a853f29d3f4756abdd06b7d2528e483cd02d1dc193"
+    },
+    {
+      "layer": 7,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            525.6546347449033,
+            404.88630908122195,
+            577.6682094568197,
+            425.1928248044866
+          ],
+          "final_effective_observations_per_head": [
+            4095.9999999999986,
+            4096.0,
+            4096.0,
+            4096.000000000001
+          ],
+          "shrinkage_alpha_per_head": [
+            0.34071033357449904,
+            0.29853936495909555,
+            0.35741803970706937,
+            0.3060170085413022
+          ],
+          "minimum_final_effective_observations": 4095.9999999999986,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.29853936495909555,
+          "maximum_alpha": 0.35741803970706937
+        },
+        "fit": {
+          "weighted_global_r2": 0.9983382003955532,
+          "unweighted_global_r2": 0.9974926353486839,
+          "normalized_weight_minimum": 0.6425819409655799,
+          "normalized_weight_median": 0.6955354793092497,
+          "normalized_weight_maximum": 81.86224370302982,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.997969545191268,
+            0.9984636563299659,
+            0.9984277374140296,
+            0.9984845370397295
+          ],
+          "unweighted_per_head_r2": [
+            0.9970049686710194,
+            0.9978319430735932,
+            0.9976029260576282,
+            0.9974747555003703
+          ],
+          "effective_observations_per_head": [
+            4096.000005446056,
+            4096.000010468881,
+            4095.999998320217,
+            4095.9999926724863
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            266.49975197521076,
+            185.23611550490813,
+            193.86029752464555,
+            171.26538513884987
+          ],
+          "final_effective_observations_per_head": [
+            4096.0,
+            4096.000000000001,
+            4095.9999999999995,
+            4096.0
+          ],
+          "shrinkage_alpha_per_head": [
+            0.24175981307528732,
+            0.20134020643209916,
+            0.20599739896652258,
+            0.19356289694798703
+          ],
+          "minimum_final_effective_observations": 4095.9999999999995,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.19356289694798703,
+          "maximum_alpha": 0.24175981307528732
+        },
+        "fit": {
+          "weighted_global_r2": 0.9944628410601853,
+          "unweighted_global_r2": 0.9943695792339692,
+          "normalized_weight_minimum": 0.7582401648252445,
+          "normalized_weight_median": 0.7986959813079871,
+          "normalized_weight_maximum": 52.21498118232646,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.99455100541581,
+            0.9962367544944261,
+            0.9934773288262555,
+            0.9932323597876688
+          ],
+          "unweighted_per_head_r2": [
+            0.9943479517270847,
+            0.9962357440729063,
+            0.9934193268837862,
+            0.9930268571775162
+          ],
+          "effective_observations_per_head": [
+            4096.000004150463,
+            4096.0000136216895,
+            4095.999985037941,
+            4096.000014563117
+          ]
+        }
+      },
+      "file": "layer_007.safetensors",
+      "sha256": "9e2d1e3926f1a743af2bf6660e1a4c7500b68eae6a416264441f1f2d615a5f98"
+    },
+    {
+      "layer": 8,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            186.21370825153997,
+            445.86753372004813,
+            160.9689004344959,
+            715.0419314669946
+          ],
+          "final_effective_observations_per_head": [
+            4095.9999999999995,
+            4096.0,
+            4095.9999999999995,
+            4096.0
+          ],
+          "shrinkage_alpha_per_head": [
+            0.20187341309328954,
+            0.3134550467070425,
+            0.18762862528100643,
+            0.39838511524858233
+          ],
+          "minimum_final_effective_observations": 4095.9999999999995,
+          "maximum_final_effective_observations": 4096.0,
+          "minimum_alpha": 0.18762862528100643,
+          "maximum_alpha": 0.39838511524858233
+        },
+        "fit": {
+          "weighted_global_r2": 0.9977281783427691,
+          "unweighted_global_r2": 0.996811225893791,
+          "normalized_weight_minimum": 0.6016148920478618,
+          "normalized_weight_median": 0.798242271197387,
+          "normalized_weight_maximum": 83.90480798378043,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9971156454236845,
+            0.9978694896472883,
+            0.9980979902006962,
+            0.9976321921053428
+          ],
+          "unweighted_per_head_r2": [
+            0.9962490309622327,
+            0.9970596032378582,
+            0.997395285660059,
+            0.9965355208393839
+          ],
+          "effective_observations_per_head": [
+            4095.9999914605232,
+            4095.9999964308527,
+            4095.9999927844365,
+            4096.000002990279
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            160.3659534644344,
+            181.10769605988725,
+            149.39442798537854,
+            444.2443513943692
+          ],
+          "final_effective_observations_per_head": [
+            4095.9999999999995,
+            4096.0,
+            4096.000000000001,
+            4095.9999999999995
+          ],
+          "shrinkage_alpha_per_head": [
+            0.18727539709812296,
+            0.1990730084192701,
+            0.1807293849101091,
+            0.3128771849747039
+          ],
+          "minimum_final_effective_observations": 4095.9999999999995,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.1807293849101091,
+          "maximum_alpha": 0.3128771849747039
+        },
+        "fit": {
+          "weighted_global_r2": 0.9954275433326732,
+          "unweighted_global_r2": 0.9950201961810985,
+          "normalized_weight_minimum": 0.6871228220745718,
+          "normalized_weight_median": 0.8127480752736181,
+          "normalized_weight_maximum": 70.18817141396266,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9938929403275887,
+            0.9954200343961078,
+            0.9956600556351678,
+            0.9962847853222261
+          ],
+          "unweighted_per_head_r2": [
+            0.9934584225530326,
+            0.9953050357664698,
+            0.9955999077338609,
+            0.9953521162660826
+          ],
+          "effective_observations_per_head": [
+            4095.9999958291646,
+            4096.000009505551,
+            4096.000001601598,
+            4096.000022592315
+          ]
+        }
+      },
+      "file": "layer_008.safetensors",
+      "sha256": "095da50b4597cfaaf5ddb32c0fdbf680947505893371758c15c2b05aa0c36fbc"
+    },
+    {
+      "layer": 9,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            909.8943629738083,
+            480.74633235750974,
+            320.1520523918996,
+            994.3215085379175
+          ],
+          "final_effective_observations_per_head": [
+            4096.0,
+            4096.000000000001,
+            4096.0,
+            4096.0
+          ],
+          "shrinkage_alpha_per_head": [
+            0.450580929431169,
+            0.3256360553807705,
+            0.26516940277245077,
+            0.4715595405371957
+          ],
+          "minimum_final_effective_observations": 4096.0,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.26516940277245077,
+          "maximum_alpha": 0.4715595405371957
+        },
+        "fit": {
+          "weighted_global_r2": 0.9967926673215642,
+          "unweighted_global_r2": 0.9950575108880269,
+          "normalized_weight_minimum": 0.5284404748916985,
+          "normalized_weight_median": 0.6746878017355785,
+          "normalized_weight_maximum": 102.5708925061332,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9975078597969734,
+            0.996384756760866,
+            0.9953235012665899,
+            0.997382798842466
+          ],
+          "unweighted_per_head_r2": [
+            0.995692483831377,
+            0.9952033285537315,
+            0.9931891507445005,
+            0.995244060130335
+          ],
+          "effective_observations_per_head": [
+            4096.000010927052,
+            4096.000015489147,
+            4096.00000859424,
+            4095.9999979688223
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            361.92060304234553,
+            334.2779519731328,
+            156.83914105043985,
+            268.82741604140006
+          ],
+          "final_effective_observations_per_head": [
+            4096.000000000001,
+            4095.9999999999995,
+            4096.000000000001,
+            4096.0
+          ],
+          "shrinkage_alpha_per_head": [
+            0.28209358977465177,
+            0.27100712413998945,
+            0.18519599593656577,
+            0.24282081154303148
+          ],
+          "minimum_final_effective_observations": 4095.9999999999995,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.18519599593656577,
+          "maximum_alpha": 0.28209358977465177
+        },
+        "fit": {
+          "weighted_global_r2": 0.9914777688071137,
+          "unweighted_global_r2": 0.9907307337410233,
+          "normalized_weight_minimum": 0.7179064152379869,
+          "normalized_weight_median": 0.7573760142067745,
+          "normalized_weight_maximum": 58.40252301874468,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.993228130633249,
+            0.9930011064774931,
+            0.9880312797871801,
+            0.9910828335852622
+          ],
+          "unweighted_per_head_r2": [
+            0.9921053940436153,
+            0.9921975036124986,
+            0.9879418546758495,
+            0.9901969604772678
+          ],
+          "effective_observations_per_head": [
+            4095.9999987765864,
+            4095.9999957030086,
+            4096.000010491843,
+            4095.9999939097097
+          ]
+        }
+      },
+      "file": "layer_009.safetensors",
+      "sha256": "7db16a609a71ddb5ee8c54bf71438f32f84cbd8da19915a94ba9a9acbe361932"
+    },
+    {
+      "layer": 10,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            473.4158498220549,
+            336.5162218580534,
+            223.23647958903788,
+            160.19934232582975
+          ],
+          "final_effective_observations_per_head": [
+            4095.9999999999995,
+            4096.000000000001,
+            4096.000000000003,
+            4095.9999999999995
+          ],
+          "shrinkage_alpha_per_head": [
+            0.3231122250661781,
+            0.27192101462333257,
+            0.22114085951110657,
+            0.1871776747000744
+          ],
+          "minimum_final_effective_observations": 4095.9999999999995,
+          "maximum_final_effective_observations": 4096.000000000003,
+          "minimum_alpha": 0.1871776747000744,
+          "maximum_alpha": 0.3231122250661781
+        },
+        "fit": {
+          "weighted_global_r2": 0.9962771110016713,
+          "unweighted_global_r2": 0.9948462523753973,
+          "normalized_weight_minimum": 0.6768877518361183,
+          "normalized_weight_median": 0.7789340615615264,
+          "normalized_weight_maximum": 71.56651318950895,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9955312380992224,
+            0.9969389710963856,
+            0.9964315319476903,
+            0.9959088703447301
+          ],
+          "unweighted_per_head_r2": [
+            0.9936954975046427,
+            0.9959171824926042,
+            0.9950877290762945,
+            0.9940970602923539
+          ],
+          "effective_observations_per_head": [
+            4095.9999775586134,
+            4095.9999976888444,
+            4096.000000592207,
+            4096.000002719592
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            335.8465236207382,
+            159.36893966171183,
+            165.96314288486758,
+            150.7464272262652
+          ],
+          "final_effective_observations_per_head": [
+            4095.9999999999986,
+            4095.9999999999986,
+            4096.0,
+            4096.000000000001
+          ],
+          "shrinkage_alpha_per_head": [
+            0.27164788630612213,
+            0.18668986887056607,
+            0.1905296850001205,
+            0.18154857970717486
+          ],
+          "minimum_final_effective_observations": 4095.9999999999986,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.18154857970717486,
+          "maximum_alpha": 0.27164788630612213
+        },
+        "fit": {
+          "weighted_global_r2": 0.9935153611346157,
+          "unweighted_global_r2": 0.9930486108297786,
+          "normalized_weight_minimum": 0.7283521288218443,
+          "normalized_weight_median": 0.8133142580157321,
+          "normalized_weight_maximum": 76.98372643407991,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9928287560303461,
+            0.9942376067588127,
+            0.9939343199878345,
+            0.9929136212392392
+          ],
+          "unweighted_per_head_r2": [
+            0.9914762555100587,
+            0.9941373957626239,
+            0.9935177123764299,
+            0.992791438066404
+          ],
+          "effective_observations_per_head": [
+            4096.000008437354,
+            4096.000002595289,
+            4095.9999778997544,
+            4095.999998305749
+          ]
+        }
+      },
+      "file": "layer_010.safetensors",
+      "sha256": "0bdbd457608cf66cf6440f8f6d4f8f810a83e34eadddf3aa027eaeb4fcfda67e"
+    },
+    {
+      "layer": 11,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            257.4299724795513,
+            612.4322842302666,
+            187.45726485705575,
+            1051.2737519334032
+          ],
+          "final_effective_observations_per_head": [
+            4096.000000000001,
+            4096.000000000001,
+            4096.0,
+            4096.000000000001
+          ],
+          "shrinkage_alpha_per_head": [
+            0.23758169435051774,
+            0.3681870190478418,
+            0.20254969527150796,
+            0.4852506467514111
+          ],
+          "minimum_final_effective_observations": 4096.0,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.20254969527150796,
+          "maximum_alpha": 0.4852506467514111
+        },
+        "fit": {
+          "weighted_global_r2": 0.9972257017065916,
+          "unweighted_global_r2": 0.9961267561307515,
+          "normalized_weight_minimum": 0.5147493485340892,
+          "normalized_weight_median": 0.7624648801009652,
+          "normalized_weight_maximum": 68.99645229944872,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9962582645615733,
+            0.99744850728309,
+            0.9968094025740968,
+            0.9977818054742332
+          ],
+          "unweighted_per_head_r2": [
+            0.9955267529502603,
+            0.9963809148614641,
+            0.9959461983095697,
+            0.9963299822854583
+          ],
+          "effective_observations_per_head": [
+            4096.00001740896,
+            4096.000006154929,
+            4096.000003633694,
+            4096.000001855615
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            222.03795108838284,
+            436.9067991844845,
+            152.91717751999136,
+            574.8467103057981
+          ],
+          "final_effective_observations_per_head": [
+            4096.0,
+            4096.0,
+            4096.000000000001,
+            4095.9999999999995
+          ],
+          "shrinkage_alpha_per_head": [
+            0.220542916782716,
+            0.3102521773467061,
+            0.18285631192858665,
+            0.35653063874517105
+          ],
+          "minimum_final_effective_observations": 4095.9999999999995,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.18285631192858665,
+          "maximum_alpha": 0.35653063874517105
+        },
+        "fit": {
+          "weighted_global_r2": 0.9955048934145065,
+          "unweighted_global_r2": 0.994695119797159,
+          "normalized_weight_minimum": 0.6434693348823443,
+          "normalized_weight_median": 0.7794678802652916,
+          "normalized_weight_maximum": 83.37722794305436,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9952920595397879,
+            0.9959226795674704,
+            0.9949316024386302,
+            0.9956058710334333
+          ],
+          "unweighted_per_head_r2": [
+            0.9949731798039311,
+            0.9949011226001289,
+            0.9949245871252159,
+            0.9940096374993651
+          ],
+          "effective_observations_per_head": [
+            4095.9999991646105,
+            4096.0000038394655,
+            4095.999998305458,
+            4096.00000568817
+          ]
+        }
+      },
+      "file": "layer_011.safetensors",
+      "sha256": "1948781344b13709d71e9fb29865917da2496a403c8f16aa149c10243f5258dc"
+    },
+    {
+      "layer": 12,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            367.7377155203342,
+            1045.7730939958308,
+            728.7387389682765,
+            794.7737117322155
+          ],
+          "final_effective_observations_per_head": [
+            4095.9999999999995,
+            4096.000000000001,
+            4096.0,
+            4096.000000000001
+          ],
+          "shrinkage_alpha_per_head": [
+            0.2843736012981391,
+            0.4839433842158562,
+            0.40225663268707007,
+            0.4204601466836873
+          ],
+          "minimum_final_effective_observations": 4095.9999999999995,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.2843736012981391,
+          "maximum_alpha": 0.4839433842158562
+        },
+        "fit": {
+          "weighted_global_r2": 0.9969932360229771,
+          "unweighted_global_r2": 0.995653975110698,
+          "normalized_weight_minimum": 0.5160565979416084,
+          "normalized_weight_median": 0.6007680305149274,
+          "normalized_weight_maximum": 67.38985432599189,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9968203305552803,
+            0.9965687104077012,
+            0.9970905437089713,
+            0.9972751980181924
+          ],
+          "unweighted_per_head_r2": [
+            0.9951298160082779,
+            0.9948604424696376,
+            0.9959258871201446,
+            0.9961677108501552
+          ],
+          "effective_observations_per_head": [
+            4096.000004794422,
+            4095.99998705246,
+            4096.000005503481,
+            4095.999996743085
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            172.87960712170658,
+            484.33666844192504,
+            340.7210848958627,
+            475.63170085604816
+          ],
+          "final_effective_observations_per_head": [
+            4096.0,
+            4096.000000000001,
+            4095.9999999999986,
+            4096.0
+          ],
+          "shrinkage_alpha_per_head": [
+            0.1944771057953069,
+            0.32686542946276376,
+            0.27362990833312656,
+            0.323877095627411
+          ],
+          "minimum_final_effective_observations": 4095.9999999999986,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.1944771057953069,
+          "maximum_alpha": 0.32686542946276376
+        },
+        "fit": {
+          "weighted_global_r2": 0.9938977133907739,
+          "unweighted_global_r2": 0.9932955474323577,
+          "normalized_weight_minimum": 0.6731345653851281,
+          "normalized_weight_median": 0.726556538930385,
+          "normalized_weight_maximum": 66.55466461495409,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9920451624325769,
+            0.9950753500175007,
+            0.9927860106495258,
+            0.995417871569803
+          ],
+          "unweighted_per_head_r2": [
+            0.9919361105293634,
+            0.9942909496836297,
+            0.9923257017218636,
+            0.9945163729659965
+          ],
+          "effective_observations_per_head": [
+            4096.000006045365,
+            4095.9999745145456,
+            4095.999994341583,
+            4095.999988479576
+          ]
+        }
+      },
+      "file": "layer_012.safetensors",
+      "sha256": "29ffe32a1e1b8c2f089a904e1717af62163c47bad3bc8aadd6cfe4aee08656d8"
+    },
+    {
+      "layer": 13,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            725.0579327256249,
+            278.6220585068726,
+            1367.0520364183706,
+            899.5361667695206
+          ],
+          "final_effective_observations_per_head": [
+            4096.000000000001,
+            4095.9999999999995,
+            4096.0,
+            4096.0
+          ],
+          "shrinkage_alpha_per_head": [
+            0.4012196131961028,
+            0.24723693933651872,
+            0.5557355003386851,
+            0.44794622723734606
+          ],
+          "minimum_final_effective_observations": 4095.9999999999995,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.24723693933651872,
+          "maximum_alpha": 0.5557355003386851
+        },
+        "fit": {
+          "weighted_global_r2": 0.9969186439282812,
+          "unweighted_global_r2": 0.9956001536095876,
+          "normalized_weight_minimum": 0.4442645012840169,
+          "normalized_weight_median": 0.6039451356526531,
+          "normalized_weight_maximum": 89.9913024280098,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9969994537768472,
+            0.9967987331500255,
+            0.9972790485362597,
+            0.996552100363955
+          ],
+          "unweighted_per_head_r2": [
+            0.9959267062512582,
+            0.9959412662605476,
+            0.9954604960730402,
+            0.9952482304241681
+          ],
+          "effective_observations_per_head": [
+            4096.000005201038,
+            4095.999985212548,
+            4096.000000201184,
+            4095.999992033724
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            327.3156107854929,
+            226.4705177775513,
+            520.1251457660995,
+            494.9849984078569
+          ],
+          "final_effective_observations_per_head": [
+            4096.000000000001,
+            4096.0,
+            4095.9999999999995,
+            4096.000000000001
+          ],
+          "shrinkage_alpha_per_head": [
+            0.2681451769600465,
+            0.22274649182456752,
+            0.3388885398301119,
+            0.33048602063614935
+          ],
+          "minimum_final_effective_observations": 4095.9999999999995,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.22274649182456752,
+          "maximum_alpha": 0.3388885398301119
+        },
+        "fit": {
+          "weighted_global_r2": 0.9932862174067124,
+          "unweighted_global_r2": 0.9928323747193593,
+          "normalized_weight_minimum": 0.6611114735312149,
+          "normalized_weight_median": 0.7321844712163674,
+          "normalized_weight_maximum": 63.44279093655399,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9916736101522718,
+            0.9951806502792101,
+            0.993039018794545,
+            0.9930285784276671
+          ],
+          "unweighted_per_head_r2": [
+            0.9913780969929447,
+            0.9950724177603448,
+            0.9921328658573577,
+            0.9924816972091178
+          ],
+          "effective_observations_per_head": [
+            4095.9999999487964,
+            4095.999983618702,
+            4096.000008647542,
+            4096.000026812043
+          ]
+        }
+      },
+      "file": "layer_013.safetensors",
+      "sha256": "b2547a0e24d8ce3d6b70f270c47aa035eba5115ab7cb70ad99cce81ea9980dda"
+    },
+    {
+      "layer": 14,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            477.23706912222343,
+            1052.3927987342156,
+            1351.1272636487543,
+            419.3623046800845
+          ],
+          "final_effective_observations_per_head": [
+            4095.9999999999986,
+            4096.000000000001,
+            4096.000000000001,
+            4096.0
+          ],
+          "shrinkage_alpha_per_head": [
+            0.324430168799193,
+            0.48551621134291423,
+            0.5523688596875611,
+            0.30388799300401914
+          ],
+          "minimum_final_effective_observations": 4095.9999999999986,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.30388799300401914,
+          "maximum_alpha": 0.5523688596875611
+        },
+        "fit": {
+          "weighted_global_r2": 0.9959596117545171,
+          "unweighted_global_r2": 0.9943942222590483,
+          "normalized_weight_minimum": 0.4476311502072802,
+          "normalized_weight_median": 0.6755805011189921,
+          "normalized_weight_maximum": 87.55932611518475,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9936200851422629,
+            0.997003120340503,
+            0.9973380896859871,
+            0.9960209215520089
+          ],
+          "unweighted_per_head_r2": [
+            0.9916274811327886,
+            0.9953494892255949,
+            0.9957289827302431,
+            0.9953077680823993
+          ],
+          "effective_observations_per_head": [
+            4096.000000686076,
+            4096.0000076403285,
+            4096.000005609175,
+            4096.000016148972
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            375.9442378879368,
+            377.17203106626334,
+            805.1428845832465,
+            296.2374442909902
+          ],
+          "final_effective_observations_per_head": [
+            4095.9999999999995,
+            4096.0,
+            4096.0,
+            4096.000000000001
+          ],
+          "shrinkage_alpha_per_head": [
+            0.2875605831838099,
+            0.2880344799491557,
+            0.42325316442616034,
+            0.2549923822852649
+          ],
+          "minimum_final_effective_observations": 4095.9999999999995,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.2549923822852649,
+          "maximum_alpha": 0.42325316442616034
+        },
+        "fit": {
+          "weighted_global_r2": 0.9944882755562789,
+          "unweighted_global_r2": 0.9935237579620984,
+          "normalized_weight_minimum": 0.5767468216246517,
+          "normalized_weight_median": 0.7124542000439859,
+          "normalized_weight_maximum": 87.68843081975615,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9962271248116457,
+            0.995532513889221,
+            0.992639370372124,
+            0.9918235083898753
+          ],
+          "unweighted_per_head_r2": [
+            0.9954841473176227,
+            0.9948273612648826,
+            0.9909233413011048,
+            0.9910227751044152
+          ],
+          "effective_observations_per_head": [
+            4096.000006900141,
+            4096.000008718386,
+            4095.999979457584,
+            4096.000005957732
+          ]
+        }
+      },
+      "file": "layer_014.safetensors",
+      "sha256": "57a303c430b1ee3627d8086b1b4ed1c4b734875e18ff65a14e042a5e8dc90601"
+    },
+    {
+      "layer": 15,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            472.80115171093007,
+            285.88179344921843,
+            548.6688799603452,
+            620.0847611624487
+          ],
+          "final_effective_observations_per_head": [
+            4096.000000000001,
+            4096.000000000001,
+            4096.0,
+            4096.0
+          ],
+          "shrinkage_alpha_per_head": [
+            0.322899737757858,
+            0.25046135951396153,
+            0.348196075883563,
+            0.370518159952713
+          ],
+          "minimum_final_effective_observations": 4096.0,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.25046135951396153,
+          "maximum_alpha": 0.370518159952713
+        },
+        "fit": {
+          "weighted_global_r2": 0.9952501508482142,
+          "unweighted_global_r2": 0.993866138693974,
+          "normalized_weight_minimum": 0.6294818514472162,
+          "normalized_weight_median": 0.6776416907677313,
+          "normalized_weight_maximum": 91.39351664336144,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9938495963567332,
+            0.9956193680352456,
+            0.9957666630687914,
+            0.9957996733452942
+          ],
+          "unweighted_per_head_r2": [
+            0.9927679905976126,
+            0.9943400491054311,
+            0.9943078371991622,
+            0.9941647625953284
+          ],
+          "effective_observations_per_head": [
+            4095.9999944266547,
+            4096.000004587496,
+            4096.0000025255995,
+            4096.0000055504825
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            306.27992748228695,
+            193.3400410701487,
+            413.8866027364802,
+            323.01886036749204
+          ],
+          "final_effective_observations_per_head": [
+            4096.000000000001,
+            4095.9999999999986,
+            4096.000000000001,
+            4096.0
+          ],
+          "shrinkage_alpha_per_head": [
+            0.25931309731782654,
+            0.2057193809433516,
+            0.30187547607855014,
+            0.26636414145733367
+          ],
+          "minimum_final_effective_observations": 4095.9999999999986,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.2057193809433516,
+          "maximum_alpha": 0.30187547607855014
+        },
+        "fit": {
+          "weighted_global_r2": 0.9935844838655012,
+          "unweighted_global_r2": 0.9929329818193965,
+          "normalized_weight_minimum": 0.698124527912563,
+          "normalized_weight_median": 0.7409003381350202,
+          "normalized_weight_maximum": 63.29214858839703,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9932015425197575,
+            0.9946354161026713,
+            0.995045338383927,
+            0.9918962944755837
+          ],
+          "unweighted_per_head_r2": [
+            0.9927806298097894,
+            0.9942833018224911,
+            0.9940851561749664,
+            0.9910503476892287
+          ],
+          "effective_observations_per_head": [
+            4095.9999967936815,
+            4096.000057571959,
+            4096.000000225286,
+            4095.9999857114112
+          ]
+        }
+      },
+      "file": "layer_015.safetensors",
+      "sha256": "3ac310c00a0d71ef2d8d03ae1008b930002eb4a8e898e6f60380b4e75022db77"
+    },
+    {
+      "layer": 16,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            1159.5581346159813,
+            772.8491120827499,
+            1458.0235862443637,
+            323.0796399666371
+          ],
+          "final_effective_observations_per_head": [
+            4096.0,
+            4096.0,
+            4096.000000000001,
+            4096.000000000001
+          ],
+          "shrinkage_alpha_per_head": [
+            0.5103792684089512,
+            0.4144978456224396,
+            0.5746439780428145,
+            0.26638941524201726
+          ],
+          "minimum_final_effective_observations": 4096.0,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.26638941524201726,
+          "maximum_alpha": 0.5746439780428145
+        },
+        "fit": {
+          "weighted_global_r2": 0.996810924716545,
+          "unweighted_global_r2": 0.9951858050549167,
+          "normalized_weight_minimum": 0.4253560301817572,
+          "normalized_weight_median": 0.5855399969644537,
+          "normalized_weight_maximum": 87.24726100170655,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.996217631472412,
+            0.9973592552869402,
+            0.997422583146224,
+            0.9959556037620826
+          ],
+          "unweighted_per_head_r2": [
+            0.9941391016343875,
+            0.996218303555647,
+            0.9955568560665812,
+            0.9947059909859349
+          ],
+          "effective_observations_per_head": [
+            4096.000041099466,
+            4095.9999933769373,
+            4096.000013411053,
+            4095.999971333881
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            898.8165948753503,
+            530.1601650273103,
+            803.9639449583794,
+            177.40209055441264
+          ],
+          "final_effective_observations_per_head": [
+            4096.0,
+            4096.0,
+            4096.0,
+            4096.000000000001
+          ],
+          "shrinkage_alpha_per_head": [
+            0.4477626765702904,
+            0.3421879892391141,
+            0.42293645875047614,
+            0.19701621790528212
+          ],
+          "minimum_final_effective_observations": 4096.0,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.19701621790528212,
+          "maximum_alpha": 0.4477626765702904
+        },
+        "fit": {
+          "weighted_global_r2": 0.9926195575122092,
+          "unweighted_global_r2": 0.9908010608811207,
+          "normalized_weight_minimum": 0.5522373319809036,
+          "normalized_weight_median": 0.6578176622274237,
+          "normalized_weight_maximum": 78.95359033078128,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9936522625660379,
+            0.9921580830223893,
+            0.99323471737313,
+            0.9903487005163494
+          ],
+          "unweighted_per_head_r2": [
+            0.991121418614429,
+            0.9905762387394486,
+            0.9910434910603302,
+            0.9902237939842806
+          ],
+          "effective_observations_per_head": [
+            4096.000019729343,
+            4095.9999925340358,
+            4096.000035038562,
+            4095.9999871546106
+          ]
+        }
+      },
+      "file": "layer_016.safetensors",
+      "sha256": "2a832d395430eb2517757aeddb7aacbe74d0aed59e865482e5a1068b39b13422"
+    },
+    {
+      "layer": 17,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            431.8066048798723,
+            697.5820978191539,
+            846.7463369070005,
+            921.2589516864507
+          ],
+          "final_effective_observations_per_head": [
+            4096.0,
+            4096.000000000001,
+            4095.9999999999986,
+            4095.9999999999995
+          ],
+          "shrinkage_alpha_per_head": [
+            0.30841503365677236,
+            0.39339891314023157,
+            0.43429405405830845,
+            0.4534556865414685
+          ],
+          "minimum_final_effective_observations": 4095.9999999999986,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.30841503365677236,
+          "maximum_alpha": 0.4534556865414685
+        },
+        "fit": {
+          "weighted_global_r2": 0.9941842211281827,
+          "unweighted_global_r2": 0.9925548323019242,
+          "normalized_weight_minimum": 0.5465443132925059,
+          "normalized_weight_median": 0.6066628706994694,
+          "normalized_weight_maximum": 106.76829526107268,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9921527286513455,
+            0.9966083724679136,
+            0.9957529325511653,
+            0.9922928227944092
+          ],
+          "unweighted_per_head_r2": [
+            0.9909466835207558,
+            0.9950061414216123,
+            0.9939244471201397,
+            0.9905705824540723
+          ],
+          "effective_observations_per_head": [
+            4095.99998965214,
+            4095.9999921879044,
+            4096.000007870474,
+            4095.9999967041354
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            313.2758438131836,
+            453.6917597591046,
+            496.01340972301193,
+            684.7891502981331
+          ],
+          "final_effective_observations_per_head": [
+            4096.0,
+            4096.0,
+            4095.9999999999986,
+            4096.000000000001
+          ],
+          "shrinkage_alpha_per_head": [
+            0.2622823227557791,
+            0.31622639656987794,
+            0.33083370601958223,
+            0.38970800566644437
+          ],
+          "minimum_final_effective_observations": 4095.9999999999986,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.2622823227557791,
+          "maximum_alpha": 0.38970800566644437
+        },
+        "fit": {
+          "weighted_global_r2": 0.989664217693001,
+          "unweighted_global_r2": 0.9880573328634725,
+          "normalized_weight_minimum": 0.6102920161497916,
+          "normalized_weight_median": 0.6837791816412973,
+          "normalized_weight_maximum": 83.58642560181997,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9888436038200553,
+            0.9918606621885041,
+            0.990867928413524,
+            0.9873706190836923
+          ],
+          "unweighted_per_head_r2": [
+            0.9880526829522706,
+            0.9905456628460377,
+            0.9891251333746143,
+            0.9849377398915712
+          ],
+          "effective_observations_per_head": [
+            4096.000018658012,
+            4096.0000004537105,
+            4095.9999828825244,
+            4096.000006833039
+          ]
+        }
+      },
+      "file": "layer_017.safetensors",
+      "sha256": "fcc5a2f36c61e5faf4117046f61a7070de526fc4cd99b390a8514ee13b31a811"
+    },
+    {
+      "layer": 18,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            214.23907906960608,
+            915.3038785368207,
+            834.8230692518734,
+            619.3080835491954
+          ],
+          "final_effective_observations_per_head": [
+            4095.9999999999995,
+            4095.9999999999986,
+            4095.9999999999995,
+            4096.0
+          ],
+          "shrinkage_alpha_per_head": [
+            0.21661271574770252,
+            0.45195136682093295,
+            0.4311561961084041,
+            0.3702821896893815
+          ],
+          "minimum_final_effective_observations": 4095.9999999999986,
+          "maximum_final_effective_observations": 4096.0,
+          "minimum_alpha": 0.21661271574770252,
+          "maximum_alpha": 0.45195136682093295
+        },
+        "fit": {
+          "weighted_global_r2": 0.9927849767086212,
+          "unweighted_global_r2": 0.990911578035469,
+          "normalized_weight_minimum": 0.5480486160869216,
+          "normalized_weight_median": 0.6304155581978056,
+          "normalized_weight_maximum": 92.44853221098315,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9949521381257685,
+            0.9935023066841678,
+            0.9910663220773311,
+            0.9923673866277058
+          ],
+          "unweighted_per_head_r2": [
+            0.9937066023723863,
+            0.9912979163391922,
+            0.9894125075535332,
+            0.989941851999749
+          ],
+          "effective_observations_per_head": [
+            4096.000001681384,
+            4095.9999797807936,
+            4095.9999992634284,
+            4096.00002725384
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            156.18357048308096,
+            546.4419962530044,
+            707.7247395502077,
+            208.32278524304095
+          ],
+          "final_effective_observations_per_head": [
+            4096.0,
+            4096.000000000001,
+            4095.9999999999986,
+            4096.0
+          ],
+          "shrinkage_alpha_per_head": [
+            0.1848069373228516,
+            0.34747839518758505,
+            0.3963025298188961,
+            0.21358410365063335
+          ],
+          "minimum_final_effective_observations": 4095.9999999999986,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.1848069373228516,
+          "maximum_alpha": 0.3963025298188961
+        },
+        "fit": {
+          "weighted_global_r2": 0.9826653542094571,
+          "unweighted_global_r2": 0.9823314541297117,
+          "normalized_weight_minimum": 0.6036974789315397,
+          "normalized_weight_median": 0.7864305386794538,
+          "normalized_weight_maximum": 81.60152437469908,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9860349015980416,
+            0.9773625638665816,
+            0.9859572938452611,
+            0.981102676573971
+          ],
+          "unweighted_per_head_r2": [
+            0.9860253844276329,
+            0.9769953132003162,
+            0.9846001640564718,
+            0.9814914263407897
+          ],
+          "effective_observations_per_head": [
+            4095.9999924778754,
+            4096.000026888724,
+            4096.000038878748,
+            4095.9999919612
+          ]
+        }
+      },
+      "file": "layer_018.safetensors",
+      "sha256": "70e3d414d60fda79de2976124cda276f87a2d24f4b26073abba4a3d665f562be"
+    },
+    {
+      "layer": 19,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            121.87800315227139,
+            263.13112902462984,
+            760.6851923884362,
+            875.5198670440591
+          ],
+          "final_effective_observations_per_head": [
+            4096.0,
+            4095.9999999999986,
+            4096.000000000001,
+            4095.9999999999995
+          ],
+          "shrinkage_alpha_per_head": [
+            0.16317970216109787,
+            0.24021625938429503,
+            0.4111557101226443,
+            0.44178277730856436
+          ],
+          "minimum_final_effective_observations": 4095.9999999999986,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.16317970216109787,
+          "maximum_alpha": 0.44178277730856436
+        },
+        "fit": {
+          "weighted_global_r2": 0.9946721813205078,
+          "unweighted_global_r2": 0.9932834257910348,
+          "normalized_weight_minimum": 0.5582172273835123,
+          "normalized_weight_median": 0.7597896452324547,
+          "normalized_weight_maximum": 108.85700224358906,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9953954763810969,
+            0.9958349632495569,
+            0.9949643974231009,
+            0.9934086573632146
+          ],
+          "unweighted_per_head_r2": [
+            0.9943286036168396,
+            0.9941948570150202,
+            0.9937652105010195,
+            0.9918495080907498
+          ],
+          "effective_observations_per_head": [
+            4096.000024580615,
+            4095.999995868944,
+            4096.000004939057,
+            4096.000024329703
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            203.92827900723185,
+            191.33703414937847,
+            561.1518389310058,
+            583.0858674024613
+          ],
+          "final_effective_observations_per_head": [
+            4096.0,
+            4096.0,
+            4095.9999999999995,
+            4095.9999999999995
+          ],
+          "shrinkage_alpha_per_head": [
+            0.211307041930528,
+            0.20464554678211613,
+            0.3521935765207395,
+            0.3591161950038649
+          ],
+          "minimum_final_effective_observations": 4095.9999999999995,
+          "maximum_final_effective_observations": 4096.0,
+          "minimum_alpha": 0.20464554678211613,
+          "maximum_alpha": 0.3591161950038649
+        },
+        "fit": {
+          "weighted_global_r2": 0.989401287335546,
+          "unweighted_global_r2": 0.9879842687997582,
+          "normalized_weight_minimum": 0.6408838031077737,
+          "normalized_weight_median": 0.78869539552206,
+          "normalized_weight_maximum": 122.54723353185722,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9901776198694238,
+            0.9907559504018123,
+            0.9925424982654503,
+            0.9843736831964849
+          ],
+          "unweighted_per_head_r2": [
+            0.9869811221489319,
+            0.9906222106902173,
+            0.9912307940311067,
+            0.9827871608060387
+          ],
+          "effective_observations_per_head": [
+            4095.999987532677,
+            4095.9999625322916,
+            4096.000010652996,
+            4095.999992206479
+          ]
+        }
+      },
+      "file": "layer_019.safetensors",
+      "sha256": "d5a125063aacd4fa259bb6a832345539ff308bd2d7ff82ad27fa7b8f3d6620ed"
+    },
+    {
+      "layer": 20,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            299.5872407413956,
+            736.6799951407643,
+            692.3157150648636,
+            758.2960336614826
+          ],
+          "final_effective_observations_per_head": [
+            4096.000000000001,
+            4095.9999999999995,
+            4095.9999999999995,
+            4096.0
+          ],
+          "shrinkage_alpha_per_head": [
+            0.25644144566096166,
+            0.4044856174380346,
+            0.3918834060397539,
+            0.41049633074277614
+          ],
+          "minimum_final_effective_observations": 4095.9999999999995,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.25644144566096166,
+          "maximum_alpha": 0.41049633074277614
+        },
+        "fit": {
+          "weighted_global_r2": 0.9919158226807872,
+          "unweighted_global_r2": 0.9919882573142822,
+          "normalized_weight_minimum": 0.5895036468714769,
+          "normalized_weight_median": 0.6086090818257746,
+          "normalized_weight_maximum": 92.8375856026975,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9799443591568286,
+            0.99616596300109,
+            0.9951883204042193,
+            0.9930428956225519
+          ],
+          "unweighted_per_head_r2": [
+            0.9859316776334416,
+            0.9942186949736688,
+            0.9940098008972599,
+            0.9918770311661933
+          ],
+          "effective_observations_per_head": [
+            4095.9999875267295,
+            4095.9999879582165,
+            4096.0000006106675,
+            4095.999991898525
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            192.79437115120123,
+            382.2826601437523,
+            196.84143878964554,
+            422.9456876967856
+          ],
+          "final_effective_observations_per_head": [
+            4096.000000000001,
+            4096.0,
+            4096.000000000001,
+            4095.9999999999986
+          ],
+          "shrinkage_alpha_per_head": [
+            0.20542738628463209,
+            0.2899990622120424,
+            0.20758344752225108,
+            0.305198146620995
+          ],
+          "minimum_final_effective_observations": 4095.9999999999986,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.20542738628463209,
+          "maximum_alpha": 0.305198146620995
+        },
+        "fit": {
+          "weighted_global_r2": 0.9859159503619713,
+          "unweighted_global_r2": 0.9876493733333502,
+          "normalized_weight_minimum": 0.6948018662788421,
+          "normalized_weight_median": 0.7924178229583188,
+          "normalized_weight_maximum": 85.24586477867736,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9660442841538908,
+            0.9930106836296757,
+            0.9905085508826574,
+            0.9900465990424325
+          ],
+          "unweighted_per_head_r2": [
+            0.9763389588437948,
+            0.9920524426649278,
+            0.9903991885670488,
+            0.9895011550984284
+          ],
+          "effective_observations_per_head": [
+            4095.9999779258837,
+            4095.999991749667,
+            4095.9999985868158,
+            4095.9999877777027
+          ]
+        }
+      },
+      "file": "layer_020.safetensors",
+      "sha256": "d052f8ab4d98f0238ba19cfc8dfbc13e56cf0b37d4247080ee7f45bbe8bc2cc7"
+    },
+    {
+      "layer": 21,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            417.92648150108533,
+            232.9786086239175,
+            745.6231754001184,
+            588.6706392698245
+          ],
+          "final_effective_observations_per_head": [
+            4096.000000000001,
+            4096.0,
+            4095.9999999999986,
+            4096.0
+          ],
+          "shrinkage_alpha_per_head": [
+            0.30336151118055127,
+            0.2259438612985814,
+            0.40698234102532466,
+            0.3608588791923405
+          ],
+          "minimum_final_effective_observations": 4095.9999999999986,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.2259438612985814,
+          "maximum_alpha": 0.40698234102532466
+        },
+        "fit": {
+          "weighted_global_r2": 0.9951908595662062,
+          "unweighted_global_r2": 0.9935916774361898,
+          "normalized_weight_minimum": 0.5930176381499385,
+          "normalized_weight_median": 0.6967355621892858,
+          "normalized_weight_maximum": 134.12051416535374,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9955423675664065,
+            0.9954873040662624,
+            0.9947618111439619,
+            0.994909791138113
+          ],
+          "unweighted_per_head_r2": [
+            0.9941385788859499,
+            0.9941157978297606,
+            0.9927145740959833,
+            0.9932409184654969
+          ],
+          "effective_observations_per_head": [
+            4096.000030684849,
+            4095.9999915672656,
+            4095.999981928195,
+            4096.000002769012
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            337.6443436915859,
+            158.34104711730288,
+            537.9027762891125,
+            282.2839547749361
+          ],
+          "final_effective_observations_per_head": [
+            4095.9999999999995,
+            4096.0,
+            4095.9999999999986,
+            4096.000000000002
+          ],
+          "shrinkage_alpha_per_head": [
+            0.2723805081524493,
+            0.18608430975887089,
+            0.34471332264091087,
+            0.2488684413548355
+          ],
+          "minimum_final_effective_observations": 4095.9999999999986,
+          "maximum_final_effective_observations": 4096.000000000002,
+          "minimum_alpha": 0.18608430975887089,
+          "maximum_alpha": 0.34471332264091087
+        },
+        "fit": {
+          "weighted_global_r2": 0.9897907604866543,
+          "unweighted_global_r2": 0.9886759141710791,
+          "normalized_weight_minimum": 0.6552866700441901,
+          "normalized_weight_median": 0.7511336223254288,
+          "normalized_weight_maximum": 91.12977604451197,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9870084030107913,
+            0.9908030942076625,
+            0.9899282505601896,
+            0.9909384938679026
+          ],
+          "unweighted_per_head_r2": [
+            0.9850017691841844,
+            0.9906217489121986,
+            0.9882103149095144,
+            0.9903103369493258
+          ],
+          "effective_observations_per_head": [
+            4096.000001379031,
+            4096.000015648642,
+            4096.000013978977,
+            4096.000007040294
+          ]
+        }
+      },
+      "file": "layer_021.safetensors",
+      "sha256": "e61b34b591df612e2628a5ee3846a47c055c1a73bb7fa1fed2ce4776acb980a9"
+    },
+    {
+      "layer": 22,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            427.4634126618321,
+            531.6185113173586,
+            303.8615705859826,
+            440.01734735896457
+          ],
+          "final_effective_observations_per_head": [
+            4096.0,
+            4096.000000000001,
+            4096.000000000001,
+            4095.9999999999995
+          ],
+          "shrinkage_alpha_per_head": [
+            0.30684229564883864,
+            0.342664986563366,
+            0.2582790119273908,
+            0.31136755195227
+          ],
+          "minimum_final_effective_observations": 4095.9999999999995,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.2582790119273908,
+          "maximum_alpha": 0.342664986563366
+        },
+        "fit": {
+          "weighted_global_r2": 0.9962045430474743,
+          "unweighted_global_r2": 0.9950944770045435,
+          "normalized_weight_minimum": 0.6573350422221352,
+          "normalized_weight_median": 0.6931577291818398,
+          "normalized_weight_maximum": 98.84993696766132,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9961085281721573,
+            0.996518460095126,
+            0.9957375429329387,
+            0.9962569659503194
+          ],
+          "unweighted_per_head_r2": [
+            0.9953080482943265,
+            0.995316801497828,
+            0.9944807516176646,
+            0.994991161803955
+          ],
+          "effective_observations_per_head": [
+            4096.0000489408785,
+            4096.000024940486,
+            4095.9999905183395,
+            4095.9999754177875
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            383.1543544788121,
+            365.52400059721793,
+            156.3244999303245,
+            347.8034121571493
+          ],
+          "final_effective_observations_per_head": [
+            4096.0,
+            4096.0,
+            4096.000000000001,
+            4096.000000000001
+          ],
+          "shrinkage_alpha_per_head": [
+            0.2903328772061723,
+            0.2835080159762272,
+            0.18489064204887196,
+            0.27648520555386186
+          ],
+          "minimum_final_effective_observations": 4096.0,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.18489064204887196,
+          "maximum_alpha": 0.2903328772061723
+        },
+        "fit": {
+          "weighted_global_r2": 0.9942545644664659,
+          "unweighted_global_r2": 0.9929558944919995,
+          "normalized_weight_minimum": 0.709667141285519,
+          "normalized_weight_median": 0.7235147952396733,
+          "normalized_weight_maximum": 103.16123198555042,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.995750017886975,
+            0.9944947424815298,
+            0.987891339974856,
+            0.9937016518783588
+          ],
+          "unweighted_per_head_r2": [
+            0.9945171620095118,
+            0.993562066198657,
+            0.9871616252786758,
+            0.9919934676670769
+          ],
+          "effective_observations_per_head": [
+            4096.000042091886,
+            4096.000003054669,
+            4096.000003920883,
+            4095.9999666591652
+          ]
+        }
+      },
+      "file": "layer_022.safetensors",
+      "sha256": "3e3aa26af0d60b9b18d96c3ecd591a40011cfac09709ac722163a291df9487ab"
+    },
+    {
+      "layer": 23,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            659.771499216678,
+            477.0001105125858,
+            611.6056133298349,
+            163.67362954249694
+          ],
+          "final_effective_observations_per_head": [
+            4096.0,
+            4095.9999999999986,
+            4096.000000000001,
+            4095.9999999999995
+          ],
+          "shrinkage_alpha_per_head": [
+            0.38239469140763205,
+            0.3243485893919877,
+            0.3679343673829831,
+            0.18920517723932714
+          ],
+          "minimum_final_effective_observations": 4095.9999999999986,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.18920517723932714,
+          "maximum_alpha": 0.38239469140763205
+        },
+        "fit": {
+          "weighted_global_r2": 0.9960741379140752,
+          "unweighted_global_r2": 0.9946406469800834,
+          "normalized_weight_minimum": 0.6176053280357763,
+          "normalized_weight_median": 0.6756545895267627,
+          "normalized_weight_maximum": 88.57039634428187,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9957550772622163,
+            0.9966074702522186,
+            0.9960856244820796,
+            0.9954239286585954
+          ],
+          "unweighted_per_head_r2": [
+            0.9939589218283936,
+            0.9953926281640635,
+            0.9946364284922117,
+            0.9940090206734944
+          ],
+          "effective_observations_per_head": [
+            4096.000005248837,
+            4096.000048035497,
+            4096.000064286439,
+            4096.000034097957
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            167.06853374934744,
+            412.0905224686819,
+            234.97790483307102,
+            150.32147357244085
+          ],
+          "final_effective_observations_per_head": [
+            4096.0,
+            4096.0,
+            4096.000000000001,
+            4096.0
+          ],
+          "shrinkage_alpha_per_head": [
+            0.1911659375458231,
+            0.30121255219081305,
+            0.22691727185337182,
+            0.18129148706764006
+          ],
+          "minimum_final_effective_observations": 4096.0,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.18129148706764006,
+          "maximum_alpha": 0.30121255219081305
+        },
+        "fit": {
+          "weighted_global_r2": 0.9934013413498511,
+          "unweighted_global_r2": 0.9921548595648805,
+          "normalized_weight_minimum": 0.6987874510144239,
+          "normalized_weight_median": 0.8088340748956288,
+          "normalized_weight_maximum": 91.97554019061849,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9883661147992472,
+            0.9952635910356175,
+            0.9939014658953454,
+            0.9876839494931104
+          ],
+          "unweighted_per_head_r2": [
+            0.987859024126002,
+            0.9933370689653127,
+            0.9932970119031177,
+            0.9872075095858447
+          ],
+          "effective_observations_per_head": [
+            4096.000002337706,
+            4095.9999966265837,
+            4096.000009822919,
+            4096.000025102873
+          ]
+        }
+      },
+      "file": "layer_023.safetensors",
+      "sha256": "09c2191cfad3af9a57a9dd23ef0596ecd834f575a9a2ad1fed20f41925f8b9d0"
+    },
+    {
+      "layer": 24,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            170.09017266845217,
+            537.9806515917162,
+            428.1471532795749,
+            613.2995050778171
+          ],
+          "final_effective_observations_per_head": [
+            4095.9999999999995,
+            4095.9999999999995,
+            4096.0,
+            4095.9999999999986
+          ],
+          "shrinkage_alpha_per_head": [
+            0.19289464353964506,
+            0.34473863380841135,
+            0.30709039884781564,
+            0.3684518896253855
+          ],
+          "minimum_final_effective_observations": 4095.9999999999986,
+          "maximum_final_effective_observations": 4096.0,
+          "minimum_alpha": 0.19289464353964506,
+          "maximum_alpha": 0.3684518896253855
+        },
+        "fit": {
+          "weighted_global_r2": 0.9943714849501141,
+          "unweighted_global_r2": 0.9928016002310688,
+          "normalized_weight_minimum": 0.631548106728935,
+          "normalized_weight_median": 0.6929369570185938,
+          "normalized_weight_maximum": 99.72985840768418,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9907654962436666,
+            0.9959513096907996,
+            0.9946320855477773,
+            0.9953289480490547
+          ],
+          "unweighted_per_head_r2": [
+            0.9886132037273468,
+            0.9942354936849777,
+            0.9934668086300074,
+            0.9935892114298591
+          ],
+          "effective_observations_per_head": [
+            4095.9999997670807,
+            4095.9999732044175,
+            4096.000006755349,
+            4095.999989295807
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            154.24201069579055,
+            151.87523003897573,
+            190.05750451982053,
+            241.61885765673335
+          ],
+          "final_effective_observations_per_head": [
+            4096.0,
+            4096.0,
+            4096.000000000001,
+            4095.9999999999995
+          ],
+          "shrinkage_alpha_per_head": [
+            0.1836499329390816,
+            0.18222976054332982,
+            0.20395667745708823,
+            0.23012177426875052
+          ],
+          "minimum_final_effective_observations": 4095.9999999999995,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.18222976054332982,
+          "maximum_alpha": 0.23012177426875052
+        },
+        "fit": {
+          "weighted_global_r2": 0.9869248298259411,
+          "unweighted_global_r2": 0.9862849744933972,
+          "normalized_weight_minimum": 0.7698782088828366,
+          "normalized_weight_median": 0.816350103686973,
+          "normalized_weight_maximum": 55.93236925002074,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9892547151020252,
+            0.9876477490735603,
+            0.9892050243911409,
+            0.9848982072044574
+          ],
+          "unweighted_per_head_r2": [
+            0.9888996271211872,
+            0.9875384537398549,
+            0.9888277840531857,
+            0.9836617771774187
+          ],
+          "effective_observations_per_head": [
+            4095.9999975414885,
+            4096.000006941282,
+            4096.000026113355,
+            4095.999977063731
+          ]
+        }
+      },
+      "file": "layer_024.safetensors",
+      "sha256": "258fdabbd81c586afa89195a24704961ba2cf7dd1c773081bc0533bac6079a2b"
+    },
+    {
+      "layer": 25,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            292.0020678736037,
+            950.9549221639643,
+            406.3789236972115,
+            671.9010198193707
+          ],
+          "final_effective_observations_per_head": [
+            4095.9999999999995,
+            4096.000000000001,
+            4096.000000000001,
+            4095.9999999999986
+          ],
+          "shrinkage_alpha_per_head": [
+            0.25314873195073606,
+            0.4608910471163826,
+            0.29909509056074046,
+            0.38595654739306673
+          ],
+          "minimum_final_effective_observations": 4095.9999999999986,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.25314873195073606,
+          "maximum_alpha": 0.4608910471163826
+        },
+        "fit": {
+          "weighted_global_r2": 0.9942884728690942,
+          "unweighted_global_r2": 0.9924145567394689,
+          "normalized_weight_minimum": 0.5391089330391544,
+          "normalized_weight_median": 0.7009103299773367,
+          "normalized_weight_maximum": 87.35823048470158,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9947146777144078,
+            0.9948333994046222,
+            0.9953004830828638,
+            0.9926264066583228
+          ],
+          "unweighted_per_head_r2": [
+            0.9937171235169142,
+            0.9914432895230815,
+            0.9940186363697073,
+            0.990867320180632
+          ],
+          "effective_observations_per_head": [
+            4095.9999874326427,
+            4095.9999960701352,
+            4095.999996617698,
+            4096.0000212731165
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            161.88171470085408,
+            337.84070801173607,
+            232.4325492809965,
+            262.0928240826238
+          ],
+          "final_effective_observations_per_head": [
+            4096.0,
+            4095.9999999999986,
+            4096.0,
+            4095.9999999999986
+          ],
+          "shrinkage_alpha_per_head": [
+            0.18816214450198945,
+            0.27246041262815857,
+            0.2256772858157154,
+            0.23973854471273892
+          ],
+          "minimum_final_effective_observations": 4095.9999999999986,
+          "maximum_final_effective_observations": 4096.0,
+          "minimum_alpha": 0.18816214450198945,
+          "maximum_alpha": 0.27246041262815857
+        },
+        "fit": {
+          "weighted_global_r2": 0.9862646098171278,
+          "unweighted_global_r2": 0.9849318961627996,
+          "normalized_weight_minimum": 0.727539598635395,
+          "normalized_weight_median": 0.7743228687441778,
+          "normalized_weight_maximum": 61.03118130974554,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9856219702641488,
+            0.9864930352092709,
+            0.9884664119430172,
+            0.9856672982137273
+          ],
+          "unweighted_per_head_r2": [
+            0.9854456703343684,
+            0.9841864055495366,
+            0.9887947342917515,
+            0.9850069313186331
+          ],
+          "effective_observations_per_head": [
+            4096.000002147315,
+            4096.000019748721,
+            4095.9999932662085,
+            4096.000011342177
+          ]
+        }
+      },
+      "file": "layer_025.safetensors",
+      "sha256": "a2bfd8f4e149b7d1fa0e43e0a0e035f581560dcbbee3a8faa9736faf01f3633c"
+    },
+    {
+      "layer": 26,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            833.5290631007484,
+            488.88734797262214,
+            676.9439520563313,
+            493.183480011512
+          ],
+          "final_effective_observations_per_head": [
+            4095.9999999999995,
+            4095.9999999999986,
+            4096.0,
+            4095.9999999999986
+          ],
+          "shrinkage_alpha_per_head": [
+            0.430814398345623,
+            0.3284173603157877,
+            0.3874284533321204,
+            0.3298761260700793
+          ],
+          "minimum_final_effective_observations": 4095.9999999999986,
+          "maximum_final_effective_observations": 4096.0,
+          "minimum_alpha": 0.3284173603157877,
+          "maximum_alpha": 0.430814398345623
+        },
+        "fit": {
+          "weighted_global_r2": 0.9947081354796719,
+          "unweighted_global_r2": 0.9926639708219542,
+          "normalized_weight_minimum": 0.5691856141180721,
+          "normalized_weight_median": 0.6701310277638088,
+          "normalized_weight_maximum": 91.36524201329641,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9950934443031154,
+            0.9939296654441896,
+            0.9952819583172267,
+            0.9944857834298231
+          ],
+          "unweighted_per_head_r2": [
+            0.9920827836545048,
+            0.9909085044971913,
+            0.9929520632284807,
+            0.9939777867812097
+          ],
+          "effective_observations_per_head": [
+            4096.000011510204,
+            4095.999977608034,
+            4095.999985472655,
+            4096.000011884379
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            283.8853692004676,
+            188.02706884663087,
+            411.3284788318098,
+            416.2260182376202
+          ],
+          "final_effective_observations_per_head": [
+            4096.0,
+            4096.0,
+            4096.000000000001,
+            4095.9999999999995
+          ],
+          "shrinkage_alpha_per_head": [
+            0.24957867440857007,
+            0.20285883286274134,
+            0.30093086381847367,
+            0.3027368602135122
+          ],
+          "minimum_final_effective_observations": 4095.9999999999995,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.20285883286274134,
+          "maximum_alpha": 0.3027368602135122
+        },
+        "fit": {
+          "weighted_global_r2": 0.9864989530629347,
+          "unweighted_global_r2": 0.9845439809896742,
+          "normalized_weight_minimum": 0.697263122606421,
+          "normalized_weight_median": 0.7504214040920829,
+          "normalized_weight_maximum": 93.39805616442408,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9864823700096558,
+            0.9859545420426691,
+            0.9878270177629347,
+            0.9785053899932226
+          ],
+          "unweighted_per_head_r2": [
+            0.9849348775014382,
+            0.9853679915052435,
+            0.9847248175265685,
+            0.9762141711050608
+          ],
+          "effective_observations_per_head": [
+            4096.000017879712,
+            4096.000019122006,
+            4095.9999804032864,
+            4096.000008555314
+          ]
+        }
+      },
+      "file": "layer_026.safetensors",
+      "sha256": "07ed89d2172b6ae52df0496a2fca3c737c368dee91d2c77b766898d46f563fe5"
+    },
+    {
+      "layer": 27,
+      "k": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            744.8668748802447,
+            199.68504684229484,
+            807.3588231163576,
+            808.2882891040994
+          ],
+          "final_effective_observations_per_head": [
+            4095.9999999999995,
+            4096.0,
+            4096.0,
+            4096.000000000001
+          ],
+          "shrinkage_alpha_per_head": [
+            0.4067717466924364,
+            0.20908534450443644,
+            0.42384785930063684,
+            0.4240970743950662
+          ],
+          "minimum_final_effective_observations": 4095.9999999999995,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.20908534450443644,
+          "maximum_alpha": 0.4240970743950662
+        },
+        "fit": {
+          "weighted_global_r2": 0.9933371718281928,
+          "unweighted_global_r2": 0.9908555343261893,
+          "normalized_weight_minimum": 0.5759029385875578,
+          "normalized_weight_median": 0.5953569998706794,
+          "normalized_weight_maximum": 143.2112274174423,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9940371331110267,
+            0.9910371965750726,
+            0.9943710912850366,
+            0.993955229506006
+          ],
+          "unweighted_per_head_r2": [
+            0.9911975294487032,
+            0.9902718745603047,
+            0.9912186304117476,
+            0.9907386913105118
+          ],
+          "effective_observations_per_head": [
+            4096.000027280878,
+            4096.000011402892,
+            4096.000001927471,
+            4096.000018450533
+          ]
+        }
+      },
+      "v": {
+        "support": {
+          "target_effective_observations": 4096.0,
+          "raw_effective_observations_per_head": [
+            282.96928824558773,
+            189.02392589664706,
+            301.01790471751144,
+            278.8904460882251
+          ],
+          "final_effective_observations_per_head": [
+            4096.000000000001,
+            4095.9999999999995,
+            4095.9999999999995,
+            4096.0
+          ],
+          "shrinkage_alpha_per_head": [
+            0.24917262961381764,
+            0.20339855329051595,
+            0.2570579147693389,
+            0.2473568699650065
+          ],
+          "minimum_final_effective_observations": 4095.9999999999995,
+          "maximum_final_effective_observations": 4096.000000000001,
+          "minimum_alpha": 0.20339855329051595,
+          "maximum_alpha": 0.2570579147693389
+        },
+        "fit": {
+          "weighted_global_r2": 0.9853334497790509,
+          "unweighted_global_r2": 0.9841328707502857,
+          "normalized_weight_minimum": 0.7429420943825499,
+          "normalized_weight_median": 0.7528120873915287,
+          "normalized_weight_maximum": 143.37904342588584,
+          "execution_schedule": "independent reference solves, one head at a time; same equations",
+          "weighted_per_head_r2": [
+            0.9849223945600962,
+            0.9851963152011455,
+            0.9858947291411636,
+            0.9851758282885107
+          ],
+          "unweighted_per_head_r2": [
+            0.9837586393923086,
+            0.9843854626432226,
+            0.9845018930190651,
+            0.9840861670460651
+          ],
+          "effective_observations_per_head": [
+            4095.999996481364,
+            4096.000054207773,
+            4095.9999958193857,
+            4095.9999696016985
+          ]
+        }
+      },
+      "file": "layer_027.safetensors",
+      "sha256": "82068bf5aaa680431161fe1f92236b968ee94f1e4d5de5b7cde118c2cccc8ed2"
+    }
+  ],
+  "k": 16,
+  "ridge_lambda": 0.01,
+  "source_head_mode": "single",
+  "kind": "experimental downstream-decision attention-weighted head-local ridge",
+  "covariance_dtype": "float64",
+  "coefficient_dtype": "float32",
+  "fused_fit": false,
+  "calibration_sha256": "5ab7f28b5c31718bf7bf7dbae2350aeca2fcb9446b14c7502d5843d2591deff0",
+  "seconds": 122.7900185585022,
+  "implementation_sha256": "fe813294b7a1fc667cc39572d4d53be97c66bbff59f81614c91e61efd69a4cfb",
+  "attention_query_extension": "native_decision_query_weights_v1",
+  "base_mapper_manifest_sha256": "5d89f17c424f60ae0eec271f4d850c658fee057232d746ee07be879dcc7b6b87",
+  "decision_weights_sha256": "990113b57785680ca82a2c209c4733620c7ab4537bec199713cfefa5a8b2f752"
+}

@@ -51,6 +51,7 @@ MECO-system-core-20261015/
 │   └── build.sh        # Firmware build for a specified device ID
 ├── config/             # Interpreter paths, weights, ports, and CPU affinities
 ├── requirements/       # Gateway, CPU, and GPU dependencies
+├── weights/mapper/     # Selected mapping manifest and 28 layer safetensors files
 ├── assets/             # Paper Figures 1, 2, and 6 used in this README
 └── README.md
 ```
@@ -91,7 +92,7 @@ python3.12 -m venv "$HOME/meco-env-gpu"
 "$HOME/meco-env-gpu/bin/pip" install -r requirements/gpu.txt
 ```
 
-Prepare the model snapshots and the selected mapping weights before starting the services. Store the following pinned model revisions in the standard snapshot directories under `$HOME/.cache/huggingface/hub`. The mapping directory must contain `manifest.json` and 28 layer safetensors files from the selected mapping checkpoint. Model identities and the mapping-weight version are pinned in `meco/inference/models.py` and checked at service startup.
+Prepare the model snapshots before starting the services. Store the following pinned model revisions in the standard snapshot directories under `$HOME/.cache/huggingface/hub`. The selected mapping checkpoint is included in `weights/mapper/`: `manifest.json` and 28 layer safetensors files (about 235 MB total). Its manifest SHA256 is `7ff495e8be7b2a44e475878f18bfc843b5b3bf501a3f4d9c48019004eee27d66`. Model identities and the mapping-weight version are pinned in `meco/inference/models.py` and checked at service startup; the mapper loader also verifies each coefficient file against the manifest.
 
 | Model | Pinned revision |
 |---|---|
@@ -102,7 +103,7 @@ Copy the example configuration and edit it to set the CPU and GPU interpreter pa
 
 ```bash
 cp config/system.example.json config/system.json
-export MECO_MAPPER_DIR=/path/to/newweights/mapper
+export MECO_MAPPER_DIR="$PWD/weights/mapper"
 
 "$HOME/meco-env-gateway/bin/python" -m meco \
   --config config/system.json \
