@@ -18,18 +18,14 @@ from .processes import OwnedProcesses, assert_ports_free, connect, ready
 ROOT = Path(__file__).resolve().parents[2]
 
 
-def resolve_path(value, *, preserve_symlinks=False):
+def resolve_path(value):
     value = os.path.expandvars(os.path.expanduser(value))
     if "$" in value:
         raise ValueError("unresolved environment variable in runtime path")
-    path = Path(value).absolute()
-    resolved = path.resolve(strict=True)
-    for candidate in (path, resolved):
-        if any(character in str(candidate) for character in ('\n', '\r', '"', '@')) or re.search(r"\s", str(candidate)):
-            raise ValueError("runtime/Renode paths must not contain whitespace or monitor metacharacters")
-    # Python locates pyvenv.cfg relative to the invoked executable. Resolving a
-    # venv's interpreter symlink would silently select the base environment.
-    return path if preserve_symlinks else resolved
+    path = Path(value).resolve(strict=True)
+    if any(character in str(path) for character in ('\n', '\r', '"', '@')) or re.search(r"\s", str(path)):
+        raise ValueError("runtime/Renode paths must not contain whitespace or monitor metacharacters")
+    return path
 
 
 def validate_tasks(tasks):
@@ -70,9 +66,8 @@ async def run(config_path, tasks_path, output):
     task_file = json.loads(tasks_path.read_text(encoding="utf-8"))
     tasks = task_file["requests"] if isinstance(task_file, dict) else task_file
     validate_tasks(tasks)
-    cpu_python, gpu_python = [resolve_path(config[key], preserve_symlinks=True)
-                             for key in ("cpu_python", "gpu_python")]
-    renode, mapper = [resolve_path(config[key]) for key in ("renode", "mapper_dir")]
+    cpu_python, gpu_python, renode, mapper = [resolve_path(config[key]) for key in
+                                           ("cpu_python", "gpu_python", "renode", "mapper_dir")]
     output = output.resolve()
     if re.search(r"\s", str(output)) or any(c in str(output) for c in ('"', '@', '\n', '\r')):
         raise ValueError("use an output path without whitespace or Renode metacharacters")

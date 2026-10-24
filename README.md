@@ -101,8 +101,6 @@ Prepare the model snapshots before starting the services. Store the following pi
 
 Copy the example configuration and edit it to set the CPU and GPU interpreter paths, the Renode path, and CPU affinities appropriate for the host. Set the mapping-weight directory and launch the system:
 
-Interpreter paths may use the standard symbolic links created by `venv`; the launcher preserves those paths so each model service loads its own environment's dependencies. On a multi-GPU host, set `CUDA_VISIBLE_DEVICES` before launching (for example, `export CUDA_VISIBLE_DEVICES=1` to use physical GPU 1). The GPU service uses logical device `cuda:0` within that selection.
-
 ```bash
 cp config/system.example.json config/system.json
 export MECO_MAPPER_DIR="$PWD/weights/mapper"
